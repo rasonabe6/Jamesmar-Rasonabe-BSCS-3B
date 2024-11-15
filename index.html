@@ -7,6 +7,88 @@
     <link rel="stylesheet" href="css/boostrap.css" />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/index.css" />
+    <style>
+      .card-img-top {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+      }
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .main {
+        padding: 20px 0;
+      }
+
+      /* Poster Section Styles */
+      #poster {
+        text-align: center;
+        padding: 40px 0;
+        background-color: #000;
+      }
+
+      #poster h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      #poster p {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      #poster img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      #mission-vision {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        margin: 40px 0;
+        padding: 20px;
+        background-color: #e9ecef;
+      }
+
+      .mission,
+      .vision {
+        width: 45%;
+        text-align: center;
+      }
+
+      .mission h3,
+      .vision h3 {
+        font-size: 1.6rem;
+        color: #333;
+      }
+
+      .mission p,
+      .vision p {
+        font-size: 1.1rem;
+        color: #666;
+      }
+
+      /* Promotional Video Section */
+      #promo-video .video-container {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      iframe {
+        width: 100%;
+        max-width: 800px;
+        height: 450px;
+      }
+    </style>
   </head>
 
   <body>
@@ -20,13 +102,60 @@
       </div>
       <!-- Navigation Bar (Only Home) -->
       <div class="nav-bar">
-        <a href="https://foodthribe.github.io/foodthribe-landing-page/index.html?fbclid=IwY2xjawGasB9leHRuA2FlbQIxMAABHXxgq5MBtzLk1nrEW-UsFBlQLmNcH5xUqVeUeJHvvbv1phMCETSZKnIU8g_aem_M9LVZtDq6Xr6kyFj7QjciQ" class="nav-item">Home</a>
-        <a href="https://foodthribe.github.io/foodthribe-landing-page/home.html" class="nav-item">Members</a>
+        <a href="../../index.html" class="nav-item">Home</a>
+        <a href="../../home.html" class="nav-item">Members</a>
       </div>
     </header>
 
     <!-- Main Section -->
     <main class="container main">
+      <!-- Poster Section -->
+      <section id="poster">
+        <h2>Welcome to JM Burger!</h2>
+        <p>
+          Your go-to place for the juiciest, most flavorful burgers in town.
+        </p>
+        <img src="images/poster.jpg" alt="JM Burger Poster" />
+      </section>
+
+      <!-- Mission and Vision Section -->
+      <section id="mission-vision">
+        <div class="mission">
+          <h3>Our Mission</h3>
+          <p>
+            At JM Burger, our mission is to serve the best handcrafted burgers
+            made from fresh ingredients, providing our customers with a
+            delicious and unforgettable dining experience.
+          </p>
+        </div>
+        <div class="vision">
+          <h3>Our Vision</h3>
+          <p>
+            To be the leading burger restaurant in the region, known for our
+            quality, creativity, and commitment to customer satisfaction.
+          </p>
+        </div>
+      </section>
+
+      <!-- Promotional Video Section -->
+      <section id="promo-video">
+        <h3>Watch Our Story</h3>
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/3cFNJSLml3Q?si=_03JTgFFpVC7KBUi"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <hr />
+      <h2>Foods we offer</h2>
+      <!-- Products Section -->
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <!-- Product Card 1 -->
         <div class="col">
